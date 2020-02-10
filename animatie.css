@@ -1,0 +1,140 @@
+section img{
+  height: 350px;
+  width: 350px;
+}
+
+h1{
+  text-align: center;
+  color: #F9D342;
+  font-size: 3em;
+}
+
+body{
+}
+
+header{
+  background-color: black;
+  height: 4em;
+  width: 100%;
+  margin-top: -35px;
+  margin-bottom: 20px;
+}
+
+ol{
+  margin-left: -1.5em;
+}
+
+span{
+  float: right;
+}
+
+main{
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid;
+  grid-gap: 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image{
+  display: grid;
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+  background: transparent;
+}
+
+.info{
+  overflow: auto;
+  font-family: 'Righteous', cursive;
+  box-sizing: border-box;
+  position: relative;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  padding-left: 2em;
+  font-size: .95em;
+  /*display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;*/
+  float: left;
+}
+/*
+.links{
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.rechts{
+  grid-column: 4/5;
+  grid-row: 2/3;
+  text-align: right;
+  list-style: none;
+}
+*/
+h2{
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+h3{
+  display: grid;
+  grid-column: 3/5;
+  grid-row: 1/2;
+  padding-top: 2px;
+}
+.omhoog article{
+  animation: omhoog 2s forwards;
+}
+
+.omlaag article{
+  animation: omlaag 2s forwards;
+}
+
+@-webkit-keyframes omhoog {
+  10% {margin-top: 0}
+  30% {margin-top: -230px}
+  50% {margin-top: -260px}
+  70% {margin-top: -290px}
+  90% {margin-top: -320px}
+  20%, 40%, 60%, 80%, 100% {margin-top: -350px}
+}
+
+@-moz-keyframes omhoog {
+  10% {margin-top: 0}
+  30% {margin-top: -230px}
+  50% {margin-top: -260px}
+  70% {margin-top: -290px}
+  90% {margin-top: -320px}
+  20%, 40%, 60%, 80%, 100% {margin-top: -350px}
+}
+
+@-webkit-keyframes omlaag {
+  10% {margin-top: -320px}
+  30% {margin-top: -290px}
+  50% {margin-top: -260px}
+  70% {margin-top: -230px}
+  90% {margin-top: -200px}
+  20%, 40%, 60%, 80%, 100% {margin-top: 0}
+}
+
+@-moz-keyframes omlaag {
+  10% {margin-top: -350px}
+  30% {margin-top: -230px}
+  50% {margin-top: -260px}
+  70% {margin-top: -290px}
+  90% {margin-top: -320px}
+  20%, 40%, 60%, 80%, 100% {margin-top: 0}
+}
+
+#validatie{
+  text-align: center;
+  margin-top: 3em;
+}
